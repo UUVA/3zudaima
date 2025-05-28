@@ -1,11 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我的个人主页</title>
+    <link rel="stylesheet" href="./css/gjh.css" />
+    <style>
+        /* body {
+            background: #000;
+            height: 100vh;
+            overflow: hidden;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        } */
+
+        h1 {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12vw;
+            background: url("./img/shouye3.jpg") no-repeat center/cover;
+            background-clip: text;
+            color: transparent;
+            animation-name: scale;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes scale {
+            from {
+                font-size: 12vw;
+            }
+
+            to {
+                font-size: 390vw;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    
+
+    <!-- 头部导航 -->
+    <header id="navbar">
+        <div class="container">
+            <img src="./img/touxiang.jpg" alt="头像" class="avatar" />
+            <nav>
+                <ul>
+                    <li><a href="#home">首页</a></li>
+                    <li><a href="#about">个人介绍</a></li>
+                    <li><a href="#portfolio">作品集</a></li>
+                    <li><a href="#contact">联系合作</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 主页欢迎区域 -->
+    <section id="home" class="section">
+        <div class="container">
+            <h1 class="welcome-message welcome-message6">Hello</h1>
+            <p class="welcome-message">这里是UU</p>
+
+            <!-- 新增一个 wrapper 容器 -->
+            <div class="welcome-content">
+                <img src="./img/考拉.png" alt="小熊" class="polar-bear" />
+                <p class="wel-p">Welcome to my section</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 个人介绍 -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>关于我</h2>
+            <div class="about-content">
+                <div class="about-card">
+                    <h3>百变的我</h3>
+                    <p>热爱插画和设计，喜欢尝试不同的风格。</p>
+                </div>
+                <div class="about-card">
+                    <h3>个人叙述</h3>
+                    <p>我是XX大学的学生，专注于平面设计和数字艺术。</p>
+                </div>
+                <div class="about-card">
+                    <h3>兴趣爱好</h3>
+                    <p>我喜欢旅行、摄影和阅读。</p>
+                </div>
+                <div class="about-card">
+                    <h3>我的生活</h3>
+                    <p>住在江苏省常州市新北区常州工学院新北校区。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品集 -->
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h2>作品集</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <img src="assets/images/work1.jpg" alt="海报作品" />
+                    <h3>海报作品</h3>
+                </div>
+                <div class="portfolio-card">
+                    <img src="assets/images/work2.jpg" alt="插画作品" />
+                    <h3>插画作品</h3>
+                </div>
+                <div class="portfolio-card">
+                    <img src="assets/images/work3.jpg" alt="书籍作品" />
+                    <h3>书籍作品</h3>
+                </div>
+                <div class="portfolio-card">
+                    <img src="assets/images/work4.jpg" alt="手绘作品" />
+                    <h3>手绘作品</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>联系合作</h2>
+            <p>如果你有任何问题或合作意向，请随时联系我：</p>
+            <ul class="contact-info">
+                <li>邮箱：example@example.com</li>
+                <li>微信：your_wechat_id</li>
+                <li>电话：123-456-7890</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 返回顶部按钮 -->
+    <button id="back-to-top">↑</button>
+
+    <!-- 底部 Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- 左侧文字信息 -->
+            <div class="footer-info">
+                <h3>感谢访问我的个人简历网站</h3>
+                <p>如果你有任何问题、合作意向或想了解更多关于我的项目，请随时联系我。</p>
+                <p>&copy; 2025 UU. 保留所有权利。</p>
+            </div>
+
+            <!-- 右侧图片区域 -->
+            <div class="footer-image">
+                <img src="assets/images/footer-image.jpg" alt="底部图片" loading="lazy">
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/gjh.js"></script>
 </body>
+
 </html>

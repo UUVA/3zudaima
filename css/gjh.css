@@ -1,0 +1,284 @@
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background: #000;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 2rem;
+    height: 500px;
+}
+
+.section {
+    padding: 4rem 0;
+}
+
+/* 导航栏 */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-content {
+    display: flex;
+    align-items: center;
+    /* 垂直居中对齐 */
+    height: 60px;
+    /* 设置导航栏高度 */
+}
+
+#navbar .container {
+    display: flex;
+    align-items: center;
+    /* 垂直居中 */
+    justify-content: center;
+    /* 水平居中 */
+    height: 60px;
+    /* 与 .navbar-content 高度一致 */
+    margin: auto;
+}
+
+#navbar .avatar {
+    height: 50px;
+    /* 设置头像高度 */
+    width: 50px;
+    /* 设置头像宽度 */
+    margin-right: 15px;
+    /* 头像与导航之间的间距 */
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    /* 移除默认的列表外边距 */
+    text-align: center;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+#navbar a:hover {
+    color: #0077cc;
+}
+
+/* 主页欢迎区域 */
+/* #home {
+    background-color: #c7c5f4;
+    background-image: url('../img/shouye3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+} */
+
+#home h1 {
+    font-size: 8rem;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.welcome-message {
+    font-family: cursive;
+    font-size: 4rem;
+    color: white;   
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+    /* 添加阴影 */
+    /* animation: fadeInUp 1.5s ease forwards; */
+    /* 加入动画 */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.welcome-content {
+    display: flex;
+    align-items: center;
+    /* 垂直居中 */
+    gap: 1rem;
+    /* 图片与文字之间的间距 */
+}
+
+.polar-bear {
+    width: 20%;
+    max-width: 40px;
+    /* margin: 2rem auto; */
+    animation: float 3s infinite alternate;
+}
+
+.wel-p {
+    color: white;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+/* 个人介绍 */
+.about-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.about-card {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+}
+
+/* 作品集 */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.portfolio-card {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-card:hover img {
+    transform: scale(1.1);
+}
+
+/* 联系方式 */
+.contact-info {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin-bottom: 1rem;
+}
+
+/* 返回顶部按钮 */
+#back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    padding: 1rem;
+    background: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+}
+
+/* ============ 底部 Footer ============ */
+.site-footer {
+    background-image: url("../img/底部\ \(4\).jpg");
+    padding: 3rem 1rem;
+    border-top: 1px solid #ddd;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .footer-info {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .footer-info h3 {
+    font-size: 1.5rem;
+    color: rgb(193, 190, 190);
+    margin-bottom: 1rem;
+  }
+  
+  .footer-info p {
+    font-size: 1rem;
+    color: rgb(193, 190, 190);
+  }
+  
+  .footer-image {
+    flex: 1;
+    min-width: 200px;
+    text-align: right;
+  }
+  
+  .footer-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .footer-image img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* ============ 响应式适配 ============ */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .footer-image {
+      text-align: left;
+      margin-top: 1.5rem;
+    }
+  }
