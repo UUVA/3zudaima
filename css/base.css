@@ -16,13 +16,13 @@
 }
 
 /* 夜间模式 */
-.night-mode {
+/* .night-mode {
   --backColor: #121212;
   --headerCOlor: #1e1e1e;
   --headerhover: #2b2b2b;
   --headerFont: #ffffff;
   --fontColor: #000000;
-}
+} */
 
 .content-li svg path,.buttom svg path{
   fill:#fff;
@@ -168,6 +168,12 @@ img {
   margin: 3px auto;
   /* border: 1px solid red; */
 }
+.col>span{
+  color: var(--headerFont);
+}
+.col>span.tag{
+  color: var(--fontColor);
+}
 
 .header>div {
   display: flex;
@@ -224,22 +230,25 @@ img {
   border-radius: 10px;
   height: 3px;
   background-color: var(--mainColor);
-  transition: .4s ease-in-out;
+  
 }
 
 .header-nav>li {
   padding: 0 50px;
   position: relative;
-  transition: color .6s ease-in-out;
+  
   box-sizing: border-box;
   font-weight: bold; /* 加粗字体 */
   font-size: 16px;   /* 增大字号 */
+  color: var(--headerFont);
 }
 
 .header-nav>li:hover {
   color: var(--mainColor);
 }
-
+.header-nav>li:active{
+  color: var(--fontColor);
+}
 
 
 /* 导航 */ 
